@@ -8,19 +8,21 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #444;
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    background-color: #f9f9f9; /* Fondo suave */
-    color: #444; /* Color de texto más suave */
+    background-color: #f4f6f7; /* Fondo suave */
 }
 
+/* Estilo del encabezado */
 header {
     text-align: center;
     margin-bottom: 30px;
     padding: 20px;
-    border-bottom: 1px solid #e0e0e0; /* Línea sutil en el borde inferior */
+    border-bottom: 2px solid #2c3e50; /* Línea más prominente en el borde inferior */
+    background-color: #ffffff; /* Fondo blanco para el encabezado */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 h1 {
@@ -32,12 +34,13 @@ h1 {
 
 h2 {
     font-size: 1.5em;
-    color: #16a085;
+    color: #2980b9; /* Color más brillante para los subtítulos */
     margin-top: 30px;
-    border-bottom: 2px solid #16a085;
+    border-bottom: 2px solid #2980b9;
     padding-bottom: 5px;
 }
 
+/* Espaciado y listas */
 p, ul {
     margin: 15px 0;
 }
@@ -53,10 +56,16 @@ ul {
 
 ul li {
     margin: 10px 0;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
-    background-color: #f0f8f8; /* Fondo suave para secciones de lista */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #ecf0f1; /* Fondo suave para secciones de lista */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Efecto al pasar el mouse */
+}
+
+ul li:hover {
+    transform: translateY(-2px); /* Efecto de levantamiento */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 ul li strong {
@@ -65,19 +74,21 @@ ul li strong {
     font-size: 1.1em;
 }
 
+/* Estilo del pie de página */
 footer {
     margin-top: 40px;
     padding: 20px;
     text-align: center;
-    border-top: 1px solid #e0e0e0; /* Línea sutil en el borde superior */
+    border-top: 2px solid #2c3e50; /* Línea más prominente en el borde superior */
     font-size: 0.9em;
     color: #888;
 }
 
 /* Enlaces */
 a {
-    color: #16a085;
+    color: #2980b9;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
@@ -87,18 +98,19 @@ a:hover {
 
 /* Botones para contacto o enlaces adicionales */
 button {
-    background-color: #16a085;
+    background-color: #2980b9;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s; /* Añadir transform para efecto de botón */
 }
 
 button:hover {
-    background-color: #138f75;
+    background-color: #2471a1; /* Color más oscuro al pasar el mouse */
+    transform: translateY(-1px); /* Efecto de levantamiento del botón */
 }
 
 /* Diseño adaptable para pantallas pequeñas */
@@ -117,6 +129,6 @@ button:hover {
 
     ul li {
         font-size: 0.95em;
-        padding: 8px;
+        padding: 10px; /* Aumentar padding en pantallas pequeñas */
     }
 }
